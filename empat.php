@@ -1,5 +1,6 @@
 <?php
 
+// File: Author.php
 class Author {
     public $name;
     public $description;
@@ -17,6 +18,7 @@ class Author {
     }
 }
 
+// File: Book.php
 class Book {
     public $ISBN;
     public $title;
@@ -60,6 +62,7 @@ class Book {
     }
 }
 
+// File: Publisher.php
 class Publisher {
     public $name;
     public $address;
@@ -80,6 +83,11 @@ class Publisher {
     }
 }
 
+// File utama: Keenam.php
+require_once 'Author.php';
+require_once 'Book.php';
+require_once 'Publisher.php';
+
 // Contoh penggunaan
 $author = new Author("Rohim Amrullah", "An experienced author");
 $book = new Book(123456789, "PHP Programming", "Education", "A comprehensive guide to PHP", "English", "Rohim Amrullah", 300, "Tech Books Publishing");
@@ -94,4 +102,3 @@ print_r($book->showAll());
 echo "\nPublisher Phone: ";
 echo $publisher->getPhone();
 ?>
-
