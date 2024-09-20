@@ -1,5 +1,5 @@
 <?php
-namespace App\Shape;
+namespace App\Model\Shape;
 class Bola
 {
     const PHI = 3.14;
