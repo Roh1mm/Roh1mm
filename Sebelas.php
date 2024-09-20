@@ -3,7 +3,7 @@
 // Meng-include file Dosen.php yang berada di folder App/Admin
 require_once 'vendor/autoload.php';
 
-use App\Admin\Dosen;
+use App\Model\Akademik\Dosen;
 
 // Membuat objek baru dari class Dosen
 $dian = new Dosen(
