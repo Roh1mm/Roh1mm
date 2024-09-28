@@ -1,20 +1,10 @@
 <?php
-
-// Meng-include file Dosen.php yang berada di folder App/Admin
-require_once 'vendor/autoload.php';
-
 use App\Model\Akademik\Dosen;
+require_once 'vendor/autoload.php';
+$dian = new Dosen(198411132015041001, "Dian Prawira", 62111111, "Jln Purnama", "0013118405");
 
-// Membuat objek baru dari class Dosen
-$dian = new Dosen(
-    1984111320150401001,   // NIP
-    "Dian Prawira",        // Nama
-    62111111,              // No HP
-    "Jln Purnama",         // Alamat
-    "0013118405"           // NIDN
-);
+$dian-> mengajar();
 
-// Menjalankan fungsi mengajar
-$dian->mengajar();
 
+echo $dian->getNoHp();
 

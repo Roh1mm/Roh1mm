@@ -5,10 +5,10 @@ namespace App\Model\Akademik;
 class Pegawai {
     public int $nip;
     protected string $nama;
-    protected int $no_hp;
+    protected string $no_hp;
     protected string $alamat;
 
-    public function __construct(int $nip, string $nama, int $no_hp, string $alamat) {
+    public function __construct(int $nip, string $nama, string $no_hp, string $alamat) {
         $this->nip = $nip;
         $this->nama = $nama;
         $this->no_hp = $no_hp;
@@ -25,7 +25,7 @@ class Pegawai {
         return true;
     }
 
-    public function getNoHp(): int {
+    protected function getNoHp(): string {
         return $this->no_hp;
     }
 
